@@ -5,22 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
         <title>Event Registration Form</title>
+        <style>
+            .error-message {
+                color: red;
+                font-style: italic;
+                font-size: small;
+                margin-top: 0;
+            }
+        </style>
     </head>
     <body>
         <form id="eventRegistrationForm" action="https://httpbin.org/post" method="post">
             <h1>Event Registration</h1>
             <div class="input-container">
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username" required>
+                <input type="text" name="username" id="username">
             </div>
             <!-- Additional form elements will be added here -->
             <div class="input-container">
                 <label for="ticket-number">Ticket Number:</label>
-                <input type="number" name="ticket-number" id="ticket-number" required>
+                <input type="number" name="ticket-number" id="ticket-number">
             </div>
             <div class="input-container">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="text" name="email" id="email">
             </div>
             <button type="submit">Register</button>
         </form>
