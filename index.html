@@ -7,9 +7,21 @@
         <title>Event Registration Form</title>
     </head>
     <body>
-        <form id="eventRegistrationForm" action="#">
+        <form id="eventRegistrationForm" action="https://httpbin.org/post" method="post">
             <h1>Event Registration</h1>
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
             <!-- Additional form elements will be added here -->
+            <div class="input-container">
+                <label for="ticket-number">Ticket Number:</label>
+                <input type="number" name="ticket-number" id="ticket-number" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
             <button type="submit">Register</button>
         </form>
         <script src="script.js"></script>
